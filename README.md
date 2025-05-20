@@ -37,7 +37,7 @@ A console-based Library Management System written in Java to demonstrate key Obj
 
 ## 📐 Class Diagram
 
-> _**![Class Diagram](images/lms_class_diagram.png)**
+> _**![Class Diagram](lms_class_diagram.png)**
 
 ---
 

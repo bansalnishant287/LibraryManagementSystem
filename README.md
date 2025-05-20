@@ -1,5 +1,6 @@
 # 📚 Library Management System (Java)
-https://github.com/bansalnishant287/LibraryManagementSystem
+https://github.com/bansalnishant287/LibraryManagementSystem  
+
 A console-based Library Management System written in Java to demonstrate key Object-Oriented Programming (OOP) concepts, SOLID principles, and the use of common design patterns like Factory and Observer.
 
 ## 🚀 Features
@@ -44,15 +45,24 @@ A console-based Library Management System written in Java to demonstrate key Obj
 ## 📁 Project Structure
 
 src/
-├── books/ # Book class and related logic
-├── patrons/ # Patron class and details
-├── inventory/ # Manages inventory of books
-├── services/ # Core services (lending, system manager, etc.)
-├── reservations/ # Reservation and waitlist features
-├── notifications/ # Observer pattern: Notify when reserved books return
-├── recommendations/ # Recommendation engine using strategies
-├── utils/ # Logger utility and helpers
-└── Main.java # Demo runner
+├── books/ # Book class and related logic  
+
+├── patrons/ # Patron class and details  
+
+├── inventory/ # Manages inventory of books  
+
+├── services/ # Core services (lending, system manager, etc.)  
+
+├── reservations/ # Reservation and waitlist features  
+
+├── notifications/ # Observer pattern: Notify when reserved books return  
+
+├── recommendations/ # Recommendation engine using strategies  
+
+├── utils/ # Logger utility and helpers  
+
+└── Main.java # Demo runner  
+
 
 ---
 

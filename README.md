@@ -1,5 +1,5 @@
 # 📚 Library Management System (Java)
-https://github.com/bansalnishant287
+https://github.com/bansalnishant287/LibraryManagementSystem
 A console-based Library Management System written in Java to demonstrate key Object-Oriented Programming (OOP) concepts, SOLID principles, and the use of common design patterns like Factory and Observer.
 
 ## 🚀 Features

@@ -4,16 +4,27 @@ A console-based Library Management System written in Java to demonstrate key Obj
 
 ## 🚀 Features
 
-### ✅ Core Functionalities
-- **Book Management:** Add, remove, update, and search books.
-- **Patron Management:** Register patrons and manage borrowing history.
-- **Lending Process:** Book checkout and return system.
-- **Inventory Management:** Tracks available and borrowed books.
+### 🟢 Core Functionalities
+- Book management: add, remove, update, and search
+- Patron management: register users, update info
+- Lending system: checkout and return books
+- Inventory tracking: available vs. borrowed
 
-### 🔧 Optional Extensions
-- **Multi-branch Support:** Manage multiple library branches.
-- **Reservation System:** Reserve and notify patrons for checked-out books.
-- **Recommendation System:** Suggest books based on borrowing history using Strategy Pattern.
+### 🟡 Optional Extensions
+- Reservation system: patrons can reserve books
+- Notification system: alerts patrons when reserved books become available
+
+---
+
+## 🧠 Design Concepts Applied
+
+| Concept | Usage |
+|--------|--------|
+| ✅ OOP Principles | Inheritance, encapsulation, abstraction, polymorphism |
+| ✅ SOLID Principles | All core packages follow SRP, OCP, and DIP |
+| ✅ Design Patterns | **Facade Pattern** (`LibrarySystem.java`), **Observer Pattern** (notification system) |
+| ✅ Java Collections | Efficient use of `Map`, `List`, `Queue`, `Set` |
+| ✅ Logging | `System.out.println()` used for demo-level logs (can be replaced with logging frameworks)
 
 ---
 
@@ -25,44 +36,24 @@ A console-based Library Management System written in Java to demonstrate key Obj
 
 ---
 
-## 🧩 Design Patterns Used
+## 📦 Project Package Structure
 
-| Pattern    | Purpose                                                                 |
-|------------|-------------------------------------------------------------------------|
-| **Factory**    | To encapsulate object creation of various services or entities.         |
-| **Observer**   | For the reservation notification system.                              |
-| **Strategy**   | (Optional) To switch between different recommendation strategies.     |
+  📦 library  
+  ┣ 📂 books → Book, Author classes and related models  
+  ┣ 📂 patrons → Patron, borrowing history service  
+  ┣ 📂 inventory → Manages library stock and search functionality  
+  ┣ 📂 lending → Lending logic: checkout, return, validations  
+  ┣ 📂 reservation → Reservation system for unavailable books  
+  ┣ 📂 notifications → Notification service for reservation alerts  
+  ┣ 📂 system → Facade LibrarySystem class for orchestration  
+  ┣ 📂 utils → Common helper classes (if needed)    
+  ┣ 📂 main → CLI or application entry point  
 
 ---
 
 ## 📐 Class Diagram
 
 > _**![Class Diagram](lms_class_diagram.png)**
-
----
-
-## 📁 Project Structure
-
-src/  
-
-├── books/ # Book class and related logic  
-
-├── patrons/ # Patron class and details  
-
-├── inventory/ # Manages inventory of books  
-
-├── services/ # Core services (lending, system manager, etc.)  
-
-├── reservations/ # Reservation and waitlist features  
-
-├── notifications/ # Observer pattern: Notify when reserved books return  
-
-├── recommendations/ # Recommendation engine using strategies  
-
-├── utils/ # Logger utility and helpers  
-
-└── Main.java # Demo runner  
-
 
 ---
 

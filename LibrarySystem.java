@@ -86,9 +86,24 @@ public class LibrarySystem {
         }
 
         boolean success = lendingService.returnBook(ISBN, patron);
-        System.out.println(success ? "Book returned." : "Return failed.");
-        return success;
+
+        if (success) {
+            System.out.println("Book returned.");
+
+            if (reservationService.hasReservations(ISBN)) {
+                Patron nextInLine = reservationService.getNextReservation(ISBN);
+                if (nextInLine != null) {
+                    notificationService.notifyPatron(nextInLine, "Book with ISBN " + ISBN + " is now available for you.");
+                }
+            }
+
+            return true;
+        }
+
+        System.out.println("Return failed.");
+        return false;
     }
+
 
     // -------------------------
     // History
